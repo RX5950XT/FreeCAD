@@ -4,287 +4,287 @@
   <context>
     <name>CmdCreateSpreadsheet</name>
     <message>
-      <location filename="../../Command.cpp" line="955"/>
+      <location filename="../../Command.cpp" line="955" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="956"/>
+      <location filename="../../Command.cpp" line="956" />
       <source>&amp;New Spreadsheet</source>
-      <translation type="unfinished">&amp;New Spreadsheet</translation>
+      <translation>新建電子表格(&amp;N)</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="957"/>
+      <location filename="../../Command.cpp" line="957" />
       <source>Creates a new spreadsheet</source>
-      <translation type="unfinished">Creates a new spreadsheet</translation>
+      <translation>建立新的電子表格</translation>
     </message>
   </context>
   <context>
     <name>CmdSpreadsheetAlignBottom</name>
     <message>
-      <location filename="../../Command.cpp" line="514"/>
+      <location filename="../../Command.cpp" line="514" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="515"/>
+      <location filename="../../Command.cpp" line="515" />
       <source>Align &amp;Bottom</source>
-      <translation type="unfinished">Align &amp;Bottom</translation>
+      <translation>底部對齊(&amp;B)</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="516"/>
+      <location filename="../../Command.cpp" line="516" />
       <source>Aligns cell contents to the bottom</source>
-      <translation type="unfinished">Aligns cell contents to the bottom</translation>
+      <translation>將單元格內容與底部對齊</translation>
     </message>
   </context>
   <context>
     <name>CmdSpreadsheetAlignCenter</name>
     <message>
-      <location filename="../../Command.cpp" line="343"/>
+      <location filename="../../Command.cpp" line="343" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="344"/>
+      <location filename="../../Command.cpp" line="344" />
       <source>Align Horizontal &amp;Center</source>
-      <translation type="unfinished">Align Horizontal &amp;Center</translation>
+      <translation>水平居中對齊(&amp;C)</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="345"/>
+      <location filename="../../Command.cpp" line="345" />
       <source>Aligns cell contents to the horizontal center</source>
-      <translation type="unfinished">Aligns cell contents to the horizontal center</translation>
+      <translation>將單元格內容與水平中心對齊</translation>
     </message>
   </context>
   <context>
     <name>CmdSpreadsheetAlignLeft</name>
     <message>
-      <location filename="../../Command.cpp" line="286"/>
+      <location filename="../../Command.cpp" line="286" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="287"/>
+      <location filename="../../Command.cpp" line="287" />
       <source>Align &amp;Left</source>
-      <translation type="unfinished">Align &amp;Left</translation>
+      <translation>左對齊(&amp;L)</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="288"/>
+      <location filename="../../Command.cpp" line="288" />
       <source>Aligns cell contents to the left</source>
-      <translation type="unfinished">Aligns cell contents to the left</translation>
+      <translation>將單元格內容左對齊</translation>
     </message>
   </context>
   <context>
     <name>CmdSpreadsheetAlignRight</name>
     <message>
-      <location filename="../../Command.cpp" line="400"/>
+      <location filename="../../Command.cpp" line="400" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="401"/>
+      <location filename="../../Command.cpp" line="401" />
       <source>Align &amp;Right</source>
-      <translation type="unfinished">Align &amp;Right</translation>
+      <translation>右對齊(&amp;R)</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="402"/>
+      <location filename="../../Command.cpp" line="402" />
       <source>Aligns cell contents to the right</source>
-      <translation type="unfinished">Aligns cell contents to the right</translation>
+      <translation>將單元格內容右對齊</translation>
     </message>
   </context>
   <context>
     <name>CmdSpreadsheetAlignTop</name>
     <message>
-      <location filename="../../Command.cpp" line="457"/>
+      <location filename="../../Command.cpp" line="457" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="458"/>
+      <location filename="../../Command.cpp" line="458" />
       <source>Align &amp;Top</source>
-      <translation type="unfinished">Align &amp;Top</translation>
+      <translation>頂部對齊(&amp;T)</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="459"/>
+      <location filename="../../Command.cpp" line="459" />
       <source>Aligns cell contents to the top</source>
-      <translation type="unfinished">Aligns cell contents to the top</translation>
+      <translation>將單元格內容與頂部對齊</translation>
     </message>
   </context>
   <context>
     <name>CmdSpreadsheetAlignVCenter</name>
     <message>
-      <location filename="../../Command.cpp" line="571"/>
+      <location filename="../../Command.cpp" line="571" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="572"/>
+      <location filename="../../Command.cpp" line="572" />
       <source>Align &amp;Vertical Center</source>
-      <translation type="unfinished">Align &amp;Vertical Center</translation>
+      <translation>垂直居中對齊(&amp;V)</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="573"/>
+      <location filename="../../Command.cpp" line="573" />
       <source>Aligns cell contents to the vertical center</source>
-      <translation type="unfinished">Aligns cell contents to the vertical center</translation>
+      <translation>將單元格內容與垂直中心對齊</translation>
     </message>
   </context>
   <context>
     <name>CmdSpreadsheetExport</name>
     <message>
-      <location filename="../../Command.cpp" line="241"/>
+      <location filename="../../Command.cpp" line="241" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="242"/>
+      <location filename="../../Command.cpp" line="242" />
       <source>&amp;Export Spreadsheet</source>
-      <translation type="unfinished">&amp;Export Spreadsheet</translation>
+      <translation>匯出電子表格(&amp;E)</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="243"/>
+      <location filename="../../Command.cpp" line="243" />
       <source>Exports the spreadsheet to a CSV file</source>
-      <translation type="unfinished">Exports the spreadsheet to a CSV file</translation>
+      <translation>將電子表格匯出為 CSV 檔案</translation>
     </message>
   </context>
   <context>
     <name>CmdSpreadsheetImport</name>
     <message>
-      <location filename="../../Command.cpp" line="186"/>
+      <location filename="../../Command.cpp" line="186" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="187"/>
+      <location filename="../../Command.cpp" line="187" />
       <source>&amp;Import Spreadsheet</source>
-      <translation type="unfinished">&amp;Import Spreadsheet</translation>
+      <translation>匯入電子表格(&amp;I)</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="188"/>
+      <location filename="../../Command.cpp" line="188" />
       <source>Imports a CSV file into a new spreadsheet</source>
-      <translation type="unfinished">Imports a CSV file into a new spreadsheet</translation>
+      <translation>將 CSV 檔案匯入新電子表格</translation>
     </message>
   </context>
   <context>
     <name>CmdSpreadsheetMergeCells</name>
     <message>
-      <location filename="../../Command.cpp" line="61"/>
+      <location filename="../../Command.cpp" line="61" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="62"/>
+      <location filename="../../Command.cpp" line="62" />
       <source>&amp;Merge Cells</source>
-      <translation type="unfinished">&amp;Merge Cells</translation>
+      <translation>合併單元格(&amp;M)</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="63"/>
+      <location filename="../../Command.cpp" line="63" />
       <source>Merges the selected cells</source>
-      <translation type="unfinished">Merges the selected cells</translation>
+      <translation>合併選定的單元格</translation>
     </message>
   </context>
   <context>
     <name>CmdSpreadsheetSetAlias</name>
     <message>
-      <location filename="../../Command.cpp" line="883"/>
+      <location filename="../../Command.cpp" line="883" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="884"/>
+      <location filename="../../Command.cpp" line="884" />
       <source>Set Alias</source>
-      <translation type="unfinished">Set Alias</translation>
+      <translation>設定別名</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="885"/>
+      <location filename="../../Command.cpp" line="885" />
       <source>Sets an alias for the selected cell</source>
-      <translation type="unfinished">Sets an alias for the selected cell</translation>
+      <translation>為選定的單元格設定別名</translation>
     </message>
   </context>
   <context>
     <name>CmdSpreadsheetSplitCell</name>
     <message>
-      <location filename="../../Command.cpp" line="122"/>
+      <location filename="../../Command.cpp" line="122" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="123"/>
+      <location filename="../../Command.cpp" line="123" />
       <source>Sp&amp;lit Cell</source>
-      <translation type="unfinished">Sp&amp;lit Cell</translation>
+      <translation>拆分單元格(&amp;L)</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="124"/>
+      <location filename="../../Command.cpp" line="124" />
       <source>Splits a previously merged cell</source>
-      <translation type="unfinished">Splits a previously merged cell</translation>
+      <translation>拆分先前合併的單元格</translation>
     </message>
   </context>
   <context>
     <name>CmdSpreadsheetStyleBold</name>
     <message>
-      <location filename="../../Command.cpp" line="628"/>
+      <location filename="../../Command.cpp" line="628" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="629"/>
+      <location filename="../../Command.cpp" line="629" />
       <source>&amp;Bold Text</source>
-      <translation type="unfinished">&amp;Bold Text</translation>
+      <translation>粗體文字(&amp;B)</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="630"/>
+      <location filename="../../Command.cpp" line="630" />
       <source>Sets the text in the selected cells bold</source>
-      <translation type="unfinished">Sets the text in the selected cells bold</translation>
+      <translation>將選定單元格中的文字設定為粗體</translation>
     </message>
   </context>
   <context>
     <name>CmdSpreadsheetStyleItalic</name>
     <message>
-      <location filename="../../Command.cpp" line="713"/>
+      <location filename="../../Command.cpp" line="713" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="714"/>
+      <location filename="../../Command.cpp" line="714" />
       <source>&amp;Italic Text</source>
-      <translation type="unfinished">&amp;Italic Text</translation>
+      <translation>斜體文字(&amp;I)</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="715"/>
+      <location filename="../../Command.cpp" line="715" />
       <source>Sets the text in the selected cells italic</source>
-      <translation type="unfinished">Sets the text in the selected cells italic</translation>
+      <translation>將選定單元格中的文字設定為斜體</translation>
     </message>
   </context>
   <context>
     <name>CmdSpreadsheetStyleUnderline</name>
     <message>
-      <location filename="../../Command.cpp" line="798"/>
+      <location filename="../../Command.cpp" line="798" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="799"/>
+      <location filename="../../Command.cpp" line="799" />
       <source>&amp;Underline Text</source>
-      <translation type="unfinished">&amp;Underline Text</translation>
+      <translation>下劃線文字(&amp;U)</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="800"/>
+      <location filename="../../Command.cpp" line="800" />
       <source>Underlines the text in the selected cells</source>
-      <translation type="unfinished">Underlines the text in the selected cells</translation>
+      <translation>將選定單元格中的文字新增下劃線</translation>
     </message>
   </context>
   <context>
     <name>ColorPickerPopup</name>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="554"/>
+      <location filename="../../qtcolorpicker.cpp" line="554" />
       <source>Reset</source>
       <translation>重設</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="558"/>
+      <location filename="../../qtcolorpicker.cpp" line="558" />
       <source>Custom Colors</source>
-      <translation type="unfinished">Custom Colors</translation>
+      <translation>自定義顏色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="653"/>
+      <location filename="../../qtcolorpicker.cpp" line="653" />
       <source>Custom Color</source>
       <translation>自定顏色</translation>
     </message>
@@ -292,176 +292,176 @@
   <context>
     <name>Command</name>
     <message>
-      <location filename="../../Command.cpp" line="82"/>
+      <location filename="../../Command.cpp" line="82" />
       <source>Merge cells</source>
       <translation>合併儲存格</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="143"/>
+      <location filename="../../Command.cpp" line="143" />
       <source>Sp&amp;lit cell</source>
-      <translation type="unfinished">Sp&amp;lit cell</translation>
+      <translation>拆分單元格(&amp;L)</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="308"/>
+      <location filename="../../Command.cpp" line="308" />
       <source>Left-align cell</source>
       <translation>儲存格左邊對齊</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="365"/>
+      <location filename="../../Command.cpp" line="365" />
       <source>Center cell</source>
       <translation>儲存格置中</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="422"/>
+      <location filename="../../Command.cpp" line="422" />
       <source>Right-align cell</source>
       <translation>儲存格右邊對齊</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="479"/>
+      <location filename="../../Command.cpp" line="479" />
       <source>Top-align cell</source>
       <translation>儲存格向上對齊</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="536"/>
+      <location filename="../../Command.cpp" line="536" />
       <source>Bottom-align cell</source>
       <translation>儲存格向下對齊</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="593"/>
+      <location filename="../../Command.cpp" line="593" />
       <source>Vertically center cells</source>
       <translation>儲存格垂直對齊</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="668"/>
+      <location filename="../../Command.cpp" line="668" />
       <source>Set bold text</source>
       <translation>設定粗體樣式</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="753"/>
+      <location filename="../../Command.cpp" line="753" />
       <source>Set italic text</source>
       <translation>設定斜體字</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="838"/>
+      <location filename="../../Command.cpp" line="838" />
       <source>Set underline text</source>
       <translation>設定文字下底線</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="968"/>
+      <location filename="../../Command.cpp" line="968" />
       <source>Create Spreadsheet</source>
       <translation>建立試算表</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.cpp" line="315"/>
+      <location filename="../../PropertiesDialog.cpp" line="315" />
       <source>Set cell properties</source>
       <translation>設定儲存格屬性</translation>
     </message>
     <message>
-      <location filename="../../SheetModel.cpp" line="628"/>
+      <location filename="../../SheetModel.cpp" line="628" />
       <source>Edit cell</source>
       <translation>編輯儲存格</translation>
     </message>
     <message>
-      <location filename="../../Workbench.cpp" line="166"/>
+      <location filename="../../Workbench.cpp" line="166" />
       <source>Set text color</source>
-      <translation type="unfinished">Set text color</translation>
+      <translation>設定文字顏色</translation>
     </message>
     <message>
-      <location filename="../../Workbench.cpp" line="206"/>
+      <location filename="../../Workbench.cpp" line="206" />
       <source>Clear text color</source>
-      <translation type="unfinished">Clear text color</translation>
+      <translation>清除文字顏色</translation>
     </message>
     <message>
-      <location filename="../../Workbench.cpp" line="243"/>
+      <location filename="../../Workbench.cpp" line="243" />
       <source>Set background color</source>
       <translation>設定背景顏色</translation>
     </message>
     <message>
-      <location filename="../../Workbench.cpp" line="283"/>
+      <location filename="../../Workbench.cpp" line="283" />
       <source>Clear background color</source>
-      <translation type="unfinished">Clear background color</translation>
+      <translation>清除背景色</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="224"/>
+      <location filename="../../SheetTableView.cpp" line="224" />
       <source>Recompute Cells</source>
-      <translation type="unfinished">Recompute Cells</translation>
+      <translation>重新計算單元格</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="326"/>
+      <location filename="../../SheetTableView.cpp" line="326" />
       <source>Insert Rows</source>
-      <translation type="unfinished">Insert Rows</translation>
+      <translation>插入行</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="353"/>
+      <location filename="../../SheetTableView.cpp" line="353" />
       <source>Remove Rows</source>
-      <translation type="unfinished">Remove Rows</translation>
+      <translation>刪除行</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="366"/>
+      <location filename="../../SheetTableView.cpp" line="366" />
       <source>Remove Columns</source>
-      <translation type="unfinished">Remove Columns</translation>
+      <translation>移除列</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="339"/>
+      <location filename="../../SheetTableView.cpp" line="339" />
       <source>Insert Columns</source>
-      <translation type="unfinished">Insert Columns</translation>
+      <translation>插入列</translation>
     </message>
     <message>
-      <location filename="../../SpreadsheetView.cpp" line="179"/>
-      <location filename="../../SheetTableView.cpp" line="581"/>
+      <location filename="../../SpreadsheetView.cpp" line="179" />
+      <location filename="../../SheetTableView.cpp" line="581" />
       <source>Clear Cells</source>
-      <translation type="unfinished">Clear Cells</translation>
+      <translation>清除單元格</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.cpp" line="204"/>
+      <location filename="../../DlgSheetConf.cpp" line="204" />
       <source>Setup conf table</source>
-      <translation type="unfinished">Setup conf table</translation>
+      <translation>設定配置表</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.cpp" line="309"/>
+      <location filename="../../DlgSheetConf.cpp" line="309" />
       <source>Unsetup conf table</source>
-      <translation type="unfinished">Unsetup conf table</translation>
+      <translation>取消配置表設定</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.cpp" line="243"/>
+      <location filename="../../DlgBindSheet.cpp" line="243" />
       <source>Bind cells</source>
       <translation>綁定儲存格</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.cpp" line="297"/>
+      <location filename="../../DlgBindSheet.cpp" line="297" />
       <source>Unbind cells</source>
-      <translation type="unfinished">Unbind cells</translation>
+      <translation>解綁單元格</translation>
     </message>
   </context>
   <context>
     <name>DlgBindSheet</name>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="14"/>
+      <location filename="../../DlgBindSheet.ui" line="14" />
       <source>Bind Spreadsheet Cells</source>
       <translation>綁定試算表儲存格</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="22"/>
+      <location filename="../../DlgBindSheet.ui" line="22" />
       <source>First cell in range</source>
       <translation>範圍內的第一個儲存格</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="29"/>
+      <location filename="../../DlgBindSheet.ui" line="29" />
       <source>Last cell in range</source>
       <translation>範圍內的最後一個儲存格</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="49"/>
+      <location filename="../../DlgBindSheet.ui" line="49" />
       <source>Start cell address</source>
       <translation>開始儲存格位址</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="62"/>
+      <location filename="../../DlgBindSheet.ui" line="62" />
       <source>End cell address</source>
       <translation>結束儲存格位址</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="82"/>
+      <location filename="../../DlgBindSheet.ui" line="82" />
       <source>Start cell address to bind to.
 Type '=' if you want to use an expression.
 The expression must evaluate to a string of some cell address.</source>
@@ -470,36 +470,36 @@ The expression must evaluate to a string of some cell address.</source>
 該表達式的計算結果必須為某個單元格位址的字串。</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="36"/>
+      <location filename="../../DlgBindSheet.ui" line="36" />
       <source>Bind cells</source>
       <translation>綁定儲存格</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="69"/>
+      <location filename="../../DlgBindSheet.ui" line="69" />
       <source>To cells</source>
-      <translation type="unfinished">To cells</translation>
+      <translation>到單元格</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="97"/>
+      <location filename="../../DlgBindSheet.ui" line="97" />
       <source>End cell address to bind to.
 Type '=' to use an expression.
 The expression must evaluate to a string of some cell address.</source>
-      <translation type="unfinished">End cell address to bind to.
-Type '=' to use an expression.
-The expression must evaluate to a string of some cell address.</translation>
+      <translation>繫結到的結束單元格地址。
+輸入“=”即可使用表示式。
+表示式的值必須是某個單元格地址的字串。</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="110"/>
+      <location filename="../../DlgBindSheet.ui" line="110" />
       <source>Which spread sheet to bind to</source>
       <translation>要綁定到哪個試算表</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="117"/>
+      <location filename="../../DlgBindSheet.ui" line="117" />
       <source>Sheet</source>
-      <translation type="unfinished">Sheet</translation>
+      <translation>工作表</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="126"/>
+      <location filename="../../DlgBindSheet.ui" line="126" />
       <source>The dependency with the referenced spreadsheet will
 be hidden to the dependency checking.
 Useful to avoid cyclic dependencies, but use with caution!</source>
@@ -508,22 +508,22 @@ Useful to avoid cyclic dependencies, but use with caution!</source>
 有助於避免循環相依，但請謹慎使用！</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="131"/>
+      <location filename="../../DlgBindSheet.ui" line="131" />
       <source>Hide dependency of binding</source>
       <translation>隱藏綁定的相依性</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="140"/>
+      <location filename="../../DlgBindSheet.ui" line="140" />
       <source>Unbind</source>
       <translation>解除綁定</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="147"/>
+      <location filename="../../DlgBindSheet.ui" line="147" />
       <source>Cancel</source>
       <translation>取消</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="154"/>
+      <location filename="../../DlgBindSheet.ui" line="154" />
       <source>OK</source>
       <translation>確定</translation>
     </message>
@@ -531,12 +531,12 @@ Useful to avoid cyclic dependencies, but use with caution!</source>
   <context>
     <name>DlgSheetConf</name>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="14"/>
+      <location filename="../../DlgSheetConf.ui" line="14" />
       <source>Setup Configuration Table</source>
       <translation>設定配置表</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="27"/>
+      <location filename="../../DlgSheetConf.ui" line="27" />
       <source>Starting cell address.
 
 The first column of the range is assumed to contain a list of configuration
@@ -554,7 +554,7 @@ by that property.
 </translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="42"/>
+      <location filename="../../DlgSheetConf.ui" line="42" />
       <source>Ending cell address.
 
 The first column of the range is assumed to contain a list of configuration
@@ -575,44 +575,44 @@ by that property.
 </translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="64"/>
+      <location filename="../../DlgSheetConf.ui" line="64" />
       <source>Type in an expression to specify the object and property name to dynamically
 switch the design configuration. The property will be created if not exist.</source>
       <translation>輸入表達式以動態指定物件和屬性名稱
 切換設計配置。如果該屬性不存在，則會建立該屬性。</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="20"/>
+      <location filename="../../DlgSheetConf.ui" line="20" />
       <source>Cell range</source>
-      <translation type="unfinished">Cell range</translation>
+      <translation>單元格範圍</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="57"/>
+      <location filename="../../DlgSheetConf.ui" line="57" />
       <source>Property</source>
       <translation>屬性</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="72"/>
+      <location filename="../../DlgSheetConf.ui" line="72" />
       <source>Group</source>
       <translation>群組</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="79"/>
+      <location filename="../../DlgSheetConf.ui" line="79" />
       <source>Optional property group name</source>
-      <translation type="unfinished">Optional property group name</translation>
+      <translation>可選屬性組名稱</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="88"/>
+      <location filename="../../DlgSheetConf.ui" line="88" />
       <source>Unsetup</source>
       <translation>取消設定</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="95"/>
+      <location filename="../../DlgSheetConf.ui" line="95" />
       <source>Cancel</source>
       <translation>取消</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="102"/>
+      <location filename="../../DlgSheetConf.ui" line="102" />
       <source>OK</source>
       <translation>確定</translation>
     </message>
@@ -620,103 +620,103 @@ switch the design configuration. The property will be created if not exist.</sou
   <context>
     <name>PropertiesDialog</name>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="14"/>
+      <location filename="../../PropertiesDialog.ui" line="14" />
       <source>Cell Properties</source>
-      <translation type="unfinished">Cell Properties</translation>
+      <translation>單元格屬性</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="27"/>
+      <location filename="../../PropertiesDialog.ui" line="27" />
       <source>&amp;Color</source>
       <translation>色彩(&amp;C)</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="33"/>
+      <location filename="../../PropertiesDialog.ui" line="33" />
       <source>Text</source>
       <translation>文字</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="43"/>
+      <location filename="../../PropertiesDialog.ui" line="43" />
       <source>Background</source>
       <translation>背景</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="80"/>
+      <location filename="../../PropertiesDialog.ui" line="80" />
       <source>&amp;Alignment</source>
       <translation>對齊(&amp;A)</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="88"/>
+      <location filename="../../PropertiesDialog.ui" line="88" />
       <source>Horizontal</source>
       <translation>水平的</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="95"/>
+      <location filename="../../PropertiesDialog.ui" line="95" />
       <source>Left</source>
       <translation>左視圖</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="102"/>
-      <location filename="../../PropertiesDialog.ui" line="155"/>
+      <location filename="../../PropertiesDialog.ui" line="102" />
+      <location filename="../../PropertiesDialog.ui" line="155" />
       <source>Center</source>
       <translation>中心</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="109"/>
+      <location filename="../../PropertiesDialog.ui" line="109" />
       <source>Right</source>
       <translation>右視圖</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="141"/>
+      <location filename="../../PropertiesDialog.ui" line="141" />
       <source>Vertical</source>
       <translation>垂直</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="148"/>
+      <location filename="../../PropertiesDialog.ui" line="148" />
       <source>Top</source>
       <translation>上視圖</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="162"/>
+      <location filename="../../PropertiesDialog.ui" line="162" />
       <source>Bottom</source>
       <translation>底視圖</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="188"/>
+      <location filename="../../PropertiesDialog.ui" line="188" />
       <source>&amp;Style</source>
       <translation>型式(&amp;S)</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="196"/>
+      <location filename="../../PropertiesDialog.ui" line="196" />
       <source>Bold</source>
       <translation>粗體</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="203"/>
+      <location filename="../../PropertiesDialog.ui" line="203" />
       <source>Italic</source>
       <translation>斜體</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="210"/>
+      <location filename="../../PropertiesDialog.ui" line="210" />
       <source>Underline</source>
       <translation>底線</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="233"/>
+      <location filename="../../PropertiesDialog.ui" line="233" />
       <source>&amp;Display unit</source>
       <translation>顯示單位(&amp;D)</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="239"/>
+      <location filename="../../PropertiesDialog.ui" line="239" />
       <source>Text for the unit</source>
       <translation>單位的文字</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="263"/>
+      <location filename="../../PropertiesDialog.ui" line="263" />
       <source>A&amp;lias</source>
       <translation>別名</translation>
     </message>
     <message>
-      <location filename="../../PropertiesDialog.ui" line="269"/>
+      <location filename="../../PropertiesDialog.ui" line="269" />
       <source>Alias for this cell</source>
       <translation>儲存格之別名</translation>
     </message>
@@ -724,160 +724,160 @@ switch the design configuration. The property will be created if not exist.</sou
   <context>
     <name>QObject</name>
     <message>
-      <location filename="../../Command.cpp" line="203"/>
+      <location filename="../../Command.cpp" line="203" />
       <source>Import file</source>
       <translation>匯入檔案</translation>
     </message>
     <message>
-      <location filename="../../SpreadsheetView.cpp" line="477"/>
+      <location filename="../../SpreadsheetView.cpp" line="477" />
       <source>Alias contains invalid characters!</source>
       <translation>別名包含無效字元!</translation>
     </message>
     <message>
-      <location filename="../../SpreadsheetView.cpp" line="483"/>
+      <location filename="../../SpreadsheetView.cpp" line="483" />
       <source>Refer to cell by alias, for example
 Spreadsheet.my_alias_name instead of Spreadsheet.B1</source>
       <translation>參照儲存格使用別名,例如
 Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
     </message>
     <message>
-      <location filename="../../AppSpreadsheetGui.cpp" line="151"/>
+      <location filename="../../AppSpreadsheetGui.cpp" line="151" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderSpreadsheet.cpp" line="112"/>
+      <location filename="../../ViewProviderSpreadsheet.cpp" line="112" />
       <source>Export File</source>
-      <translation type="unfinished">Export File</translation>
+      <translation>匯出檔案</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderSpreadsheet.cpp" line="137"/>
+      <location filename="../../ViewProviderSpreadsheet.cpp" line="137" />
       <source>Show Spreadsheet</source>
-      <translation type="unfinished">Show Spreadsheet</translation>
+      <translation>顯示電子表格</translation>
     </message>
     <message>
-      <location filename="../../Workbench.cpp" line="104"/>
+      <location filename="../../Workbench.cpp" line="104" />
       <source>Sets the text color of cells</source>
-      <translation type="unfinished">Sets the text color of cells</translation>
+      <translation>設定單元格的文字顏色</translation>
     </message>
     <message>
-      <location filename="../../Workbench.cpp" line="105"/>
-      <location filename="../../Workbench.cpp" line="106"/>
+      <location filename="../../Workbench.cpp" line="105" />
+      <location filename="../../Workbench.cpp" line="106" />
       <source>Sets the text color of spreadsheet cells</source>
-      <translation type="unfinished">Sets the text color of spreadsheet cells</translation>
+      <translation>設定電子表格單元格的文字顏色</translation>
     </message>
     <message>
-      <location filename="../../Workbench.cpp" line="132"/>
-      <location filename="../../Workbench.cpp" line="134"/>
+      <location filename="../../Workbench.cpp" line="132" />
+      <location filename="../../Workbench.cpp" line="134" />
       <source>Sets the background color of cells</source>
-      <translation type="unfinished">Sets the background color of cells</translation>
+      <translation>設定單元格的背景顏色</translation>
     </message>
     <message>
-      <location filename="../../Workbench.cpp" line="133"/>
+      <location filename="../../Workbench.cpp" line="133" />
       <source>Sets the spreadsheet cells background color</source>
-      <translation type="unfinished">Sets the spreadsheet cells background color</translation>
+      <translation>設定電子表格單元格的背景顏色</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="719"/>
+      <location filename="../../SheetTableView.cpp" line="719" />
       <source>Copy &amp; Paste Failed</source>
-      <translation type="unfinished">Copy &amp; Paste Failed</translation>
+      <translation>複製貼上失敗</translation>
     </message>
   </context>
   <context>
     <name>QtColorPicker</name>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="294"/>
-      <location filename="../../qtcolorpicker.cpp" line="463"/>
+      <location filename="../../qtcolorpicker.cpp" line="294" />
+      <location filename="../../qtcolorpicker.cpp" line="463" />
       <source>Default</source>
       <translation>預設</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="426"/>
+      <location filename="../../qtcolorpicker.cpp" line="426" />
       <source>Black</source>
       <translation>黑色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="427"/>
+      <location filename="../../qtcolorpicker.cpp" line="427" />
       <source>White</source>
       <translation>白色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="428"/>
+      <location filename="../../qtcolorpicker.cpp" line="428" />
       <source>Red</source>
       <translation>紅色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="429"/>
+      <location filename="../../qtcolorpicker.cpp" line="429" />
       <source>Dark red</source>
       <translation>暗紅色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="430"/>
+      <location filename="../../qtcolorpicker.cpp" line="430" />
       <source>Green</source>
       <translation>綠色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="431"/>
+      <location filename="../../qtcolorpicker.cpp" line="431" />
       <source>Dark green</source>
       <translation>深綠色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="432"/>
+      <location filename="../../qtcolorpicker.cpp" line="432" />
       <source>Blue</source>
       <translation>藍色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="433"/>
+      <location filename="../../qtcolorpicker.cpp" line="433" />
       <source>Dark blue</source>
       <translation>深藍色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="434"/>
+      <location filename="../../qtcolorpicker.cpp" line="434" />
       <source>Cyan</source>
       <translation>青色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="435"/>
+      <location filename="../../qtcolorpicker.cpp" line="435" />
       <source>Dark cyan</source>
       <translation>深青色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="436"/>
+      <location filename="../../qtcolorpicker.cpp" line="436" />
       <source>Magenta</source>
       <translation>洋紅色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="437"/>
+      <location filename="../../qtcolorpicker.cpp" line="437" />
       <source>Dark magenta</source>
       <translation>深洋红</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="438"/>
+      <location filename="../../qtcolorpicker.cpp" line="438" />
       <source>Yellow</source>
       <translation>黃色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="439"/>
+      <location filename="../../qtcolorpicker.cpp" line="439" />
       <source>Dark yellow</source>
       <translation>深黃色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="440"/>
+      <location filename="../../qtcolorpicker.cpp" line="440" />
       <source>Gray</source>
       <translation>灰色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="441"/>
+      <location filename="../../qtcolorpicker.cpp" line="441" />
       <source>Dark gray</source>
       <translation>深灰色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="442"/>
+      <location filename="../../qtcolorpicker.cpp" line="442" />
       <source>Light gray</source>
       <translation>淺灰色</translation>
     </message>
     <message>
-      <location filename="../../qtcolorpicker.cpp" line="494"/>
+      <location filename="../../qtcolorpicker.cpp" line="494" />
       <source>Custom Color</source>
       <translation>自定顏色</translation>
     </message>
@@ -885,96 +885,96 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
   <context>
     <name>Sheet</name>
     <message>
-      <location filename="../../Sheet.ui" line="22"/>
+      <location filename="../../Sheet.ui" line="22" />
       <source>&amp;Content</source>
-      <translation type="unfinished">&amp;Content</translation>
+      <translation>內容(&amp;C)</translation>
     </message>
     <message>
-      <location filename="../../Sheet.ui" line="39"/>
+      <location filename="../../Sheet.ui" line="39" />
       <source>&amp;Alias</source>
-      <translation type="unfinished">&amp;Alias</translation>
+      <translation>別名(&amp;A)</translation>
     </message>
     <message>
-      <location filename="../../Sheet.ui" line="52"/>
+      <location filename="../../Sheet.ui" line="52" />
       <source>Refer to cell by alias, for example
 Spreadsheet.my_alias_name instead of Spreadsheet.B1</source>
       <translation>參照儲存格使用別名,例如
 Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
     </message>
     <message>
-      <location filename="../../Sheet.ui" line="131"/>
+      <location filename="../../Sheet.ui" line="131" />
       <source>Zoom</source>
       <translation>縮放</translation>
     </message>
     <message>
-      <location filename="../../Sheet.ui" line="147"/>
+      <location filename="../../Sheet.ui" line="147" />
       <source>-</source>
-      <translation type="unfinished">-</translation>
+      <translation>-</translation>
     </message>
     <message>
-      <location filename="../../Sheet.ui" line="197"/>
+      <location filename="../../Sheet.ui" line="197" />
       <source>+</source>
-      <translation type="unfinished">+</translation>
+      <translation>+</translation>
     </message>
   </context>
   <context>
     <name>SpreadsheetGui::DlgBindSheet</name>
     <message>
-      <location filename="../../DlgBindSheet.cpp" line="231"/>
+      <location filename="../../DlgBindSheet.cpp" line="231" />
       <source>Bind Cells</source>
-      <translation type="unfinished">Bind Cells</translation>
+      <translation>繫結單元格</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.cpp" line="232"/>
+      <location filename="../../DlgBindSheet.cpp" line="232" />
       <source>Source and target cell count mismatch. Partial binding may still work.
 
 Continue?</source>
-      <translation type="unfinished">Source and target cell count mismatch. Partial binding may still work.
+      <translation>源單元格和目標單元格計數不匹配。部分繫結可能仍然有效。
 
-Continue?</translation>
+繼續嗎？</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.cpp" line="283"/>
+      <location filename="../../DlgBindSheet.cpp" line="283" />
       <source>Bind Spreadsheet Cells</source>
       <translation>綁定試算表儲存格</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.cpp" line="284"/>
+      <location filename="../../DlgBindSheet.cpp" line="284" />
       <source>Error:
 </source>
       <translation>錯誤：
 </translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.cpp" line="311"/>
+      <location filename="../../DlgBindSheet.cpp" line="311" />
       <source>Unbind Cells</source>
-      <translation type="unfinished">Unbind Cells</translation>
+      <translation>解綁單元格</translation>
     </message>
   </context>
   <context>
     <name>SpreadsheetGui::DlgSettings</name>
     <message>
-      <location filename="../../DlgSettings.ui" line="20"/>
+      <location filename="../../DlgSettings.ui" line="20" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="26"/>
+      <location filename="../../DlgSettings.ui" line="26" />
       <source>Display Settings</source>
       <translation>顯示設定</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="35"/>
+      <location filename="../../DlgSettings.ui" line="35" />
       <source>Show alias in cell with format</source>
       <translation>以格式顯示在儲存格中的別名</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="51"/>
+      <location filename="../../DlgSettings.ui" line="51" />
       <source>%</source>
       <translation>%</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="83"/>
+      <location filename="../../DlgSettings.ui" line="83" />
       <source>The format of the custom cell string presentation.
 Defaults to: %V = %A
 
@@ -984,57 +984,57 @@ Defaults to: %V = %A
 預設為：%V = %A</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="119"/>
+      <location filename="../../DlgSettings.ui" line="119" />
       <source>Import/Export Settings</source>
       <translation>匯入／匯出設定</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="32"/>
+      <location filename="../../DlgSettings.ui" line="32" />
       <source>Uses the custom presentation to display cell string</source>
-      <translation type="unfinished">Uses the custom presentation to display cell string</translation>
+      <translation>使用自定義簡報來顯示單元格字串</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="48"/>
+      <location filename="../../DlgSettings.ui" line="48" />
       <source>Defines a default zoom level for table view from 60% to 160%</source>
-      <translation type="unfinished">Defines a default zoom level for table view from 60% to 160%</translation>
+      <translation>定義表格檢視的預設縮放級別，從 60% 到 160%</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="76"/>
+      <location filename="../../DlgSettings.ui" line="76" />
       <source>Default zoom level</source>
-      <translation type="unfinished">Default zoom level</translation>
+      <translation>預設縮放級別</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="131"/>
+      <location filename="../../DlgSettings.ui" line="131" />
       <source>Delimiter character</source>
-      <translation type="unfinished">Delimiter character</translation>
+      <translation>分隔符</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="151"/>
+      <location filename="../../DlgSettings.ui" line="151" />
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character to use as field delimiter.  Default is tab, but also commonly used are commas (,) and semicolons (;). Select from the list or enter your own in the field. Must be a single character or the words &lt;span style=" font-style:italic;"&gt;tab&lt;/span&gt;, &lt;span style=" font-style:italic;"&gt;comma&lt;/span&gt;, or &lt;span style=" font-style:italic;"&gt;semicolon&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
       <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;用作欄位分隔符號的字元。  預設為 tab，但也常用的是逗號 (,) 和分號 (;)。從清單中選擇或在欄位中輸入您自己的內容。必須是單一字元或單字 &lt;span style=" font-style:italic;"&gt;tab&lt;/span&gt;、&lt;span style=" font-style:italic;"&gt;逗號&lt;/span&gt; 或 &lt;span style = " font-style:italic;"&gt;分號&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="167"/>
+      <location filename="../../DlgSettings.ui" line="167" />
       <source>tab</source>
       <translation>標籤頁</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="191"/>
+      <location filename="../../DlgSettings.ui" line="191" />
       <source>Quote character</source>
-      <translation type="unfinished">Quote character</translation>
+      <translation>引用符</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="198"/>
+      <location filename="../../DlgSettings.ui" line="198" />
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character used to delimit strings, typically is single quote (') or double quote (&amp;quot;). Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
       <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;用於分隔字串的字元，通常為單引號 (') 或雙引號 (&amp;quot)。必須是單一字元。</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="223"/>
+      <location filename="../../DlgSettings.ui" line="223" />
       <source>Escape character</source>
-      <translation type="unfinished">Escape character</translation>
+      <translation>轉義符</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="230"/>
+      <location filename="../../DlgSettings.ui" line="230" />
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Escape character, typically the backslash (\), used to indicate special unprintable characters, e.g. \t = tab. Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
       <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;逃脫字元，通常是反斜線（\），用於指示特殊的不可列印字符，例如\t = tab。必須是單一字元。</translation>
     </message>
@@ -1042,122 +1042,122 @@ Defaults to: %V = %A
   <context>
     <name>SpreadsheetGui::SheetTableView</name>
     <message>
-      <location filename="../../SheetTableView.cpp" line="186"/>
-      <location filename="../../SheetTableView.cpp" line="563"/>
+      <location filename="../../SheetTableView.cpp" line="186" />
+      <location filename="../../SheetTableView.cpp" line="563" />
       <source>Recompute</source>
       <translation>重新計算</translation>
     </message>
     <message numerus="yes">
-      <location filename="../../SheetTableView.cpp" line="147"/>
+      <location filename="../../SheetTableView.cpp" line="147" />
       <source>Insert %n Non-Contiguous Rows</source>
-      <translation type="unfinished">
+      <translation>
         <numerusform>Insert %n Non-Contiguous Rows</numerusform>
       </translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="150"/>
+      <location filename="../../SheetTableView.cpp" line="150" />
       <source>Remove Rows</source>
-      <translation type="unfinished">Remove Rows</translation>
+      <translation>刪除行</translation>
     </message>
     <message numerus="yes">
-      <location filename="../../SheetTableView.cpp" line="167"/>
+      <location filename="../../SheetTableView.cpp" line="167" />
       <source>Insert %n Non-Contiguous Columns</source>
-      <translation type="unfinished">
+      <translation>
         <numerusform>Insert %n Non-Contiguous Columns</numerusform>
       </translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="562"/>
+      <location filename="../../SheetTableView.cpp" line="562" />
       <source>Properties…</source>
-      <translation type="unfinished">Properties…</translation>
+      <translation>屬性…</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="187"/>
-      <location filename="../../SheetTableView.cpp" line="571"/>
+      <location filename="../../SheetTableView.cpp" line="187" />
+      <location filename="../../SheetTableView.cpp" line="571" />
       <source>Bind…</source>
-      <translation type="unfinished">Bind…</translation>
+      <translation>繫結…</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="564"/>
+      <location filename="../../SheetTableView.cpp" line="564" />
       <source>Configuration Table…</source>
-      <translation type="unfinished">Configuration Table…</translation>
+      <translation>配置表…</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="192"/>
-      <location filename="../../SheetTableView.cpp" line="565"/>
+      <location filename="../../SheetTableView.cpp" line="192" />
+      <location filename="../../SheetTableView.cpp" line="565" />
       <source>Merge Cells</source>
-      <translation type="unfinished">Merge Cells</translation>
+      <translation>合併單元格</translation>
     </message>
     <message numerus="yes">
-      <location filename="../../SheetTableView.cpp" line="141"/>
+      <location filename="../../SheetTableView.cpp" line="141" />
       <source>Insert %n Rows Above</source>
-      <translation type="unfinished">
+      <translation>
         <numerusform>Insert %n Rows Above</numerusform>
       </translation>
     </message>
     <message numerus="yes">
-      <location filename="../../SheetTableView.cpp" line="143"/>
+      <location filename="../../SheetTableView.cpp" line="143" />
       <source>Insert %n Rows Below</source>
-      <translation type="unfinished">
+      <translation>
         <numerusform>Insert %n Rows Below</numerusform>
       </translation>
     </message>
     <message numerus="yes">
-      <location filename="../../SheetTableView.cpp" line="161"/>
+      <location filename="../../SheetTableView.cpp" line="161" />
       <source>Insert %n Columns Left</source>
-      <translation type="unfinished">
+      <translation>
         <numerusform>Insert %n Columns Left</numerusform>
       </translation>
     </message>
     <message numerus="yes">
-      <location filename="../../SheetTableView.cpp" line="163"/>
+      <location filename="../../SheetTableView.cpp" line="163" />
       <source>Insert %n Columns Right</source>
-      <translation type="unfinished">
+      <translation>
         <numerusform>Insert %n Columns Right</numerusform>
       </translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="170"/>
+      <location filename="../../SheetTableView.cpp" line="170" />
       <source>Remove Columns</source>
-      <translation type="unfinished">Remove Columns</translation>
+      <translation>移除列</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="183"/>
+      <location filename="../../SheetTableView.cpp" line="183" />
       <source>Properties</source>
       <translation>性質</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="188"/>
+      <location filename="../../SheetTableView.cpp" line="188" />
       <source>Configuration Table</source>
-      <translation type="unfinished">Configuration Table</translation>
+      <translation>配置表格</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="197"/>
-      <location filename="../../SheetTableView.cpp" line="566"/>
+      <location filename="../../SheetTableView.cpp" line="197" />
+      <location filename="../../SheetTableView.cpp" line="566" />
       <source>Split Cell</source>
-      <translation type="unfinished">Split Cell</translation>
+      <translation>拆分單元格</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="201"/>
-      <location filename="../../SheetTableView.cpp" line="569"/>
+      <location filename="../../SheetTableView.cpp" line="201" />
+      <location filename="../../SheetTableView.cpp" line="569" />
       <source>Cut</source>
       <translation>切割</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="202"/>
-      <location filename="../../SheetTableView.cpp" line="567"/>
+      <location filename="../../SheetTableView.cpp" line="202" />
+      <location filename="../../SheetTableView.cpp" line="567" />
       <source>Copy</source>
       <translation>拷貝</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="203"/>
-      <location filename="../../SheetTableView.cpp" line="568"/>
+      <location filename="../../SheetTableView.cpp" line="203" />
+      <location filename="../../SheetTableView.cpp" line="568" />
       <source>Paste</source>
       <translation>貼上</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="204"/>
-      <location filename="../../SheetTableView.cpp" line="570"/>
+      <location filename="../../SheetTableView.cpp" line="204" />
+      <location filename="../../SheetTableView.cpp" line="570" />
       <source>Delete</source>
       <translation>刪除</translation>
     </message>
@@ -1165,7 +1165,7 @@ Defaults to: %V = %A
   <context>
     <name>SpreadsheetGui::SheetView</name>
     <message>
-      <location filename="../../SpreadsheetView.cpp" line="284"/>
+      <location filename="../../SpreadsheetView.cpp" line="284" />
       <source>Export PDF</source>
       <translation>匯出 PDF</translation>
     </message>
@@ -1173,22 +1173,22 @@ Defaults to: %V = %A
   <context>
     <name>Workbench</name>
     <message>
-      <location filename="../../Workbench.cpp" line="51"/>
+      <location filename="../../Workbench.cpp" line="51" />
       <source>Spreadsheet</source>
       <translation>試算表</translation>
     </message>
     <message>
-      <location filename="../../Workbench.cpp" line="52"/>
+      <location filename="../../Workbench.cpp" line="52" />
       <source>&amp;Spreadsheet</source>
       <translation>試算表 (&amp;S)</translation>
     </message>
     <message>
-      <location filename="../../Workbench.cpp" line="53"/>
+      <location filename="../../Workbench.cpp" line="53" />
       <source>&amp;Alignment</source>
       <translation>對齊(&amp;A)</translation>
     </message>
     <message>
-      <location filename="../../Workbench.cpp" line="54"/>
+      <location filename="../../Workbench.cpp" line="54" />
       <source>&amp;Styles</source>
       <translation>樣式(&amp;S)</translation>
     </message>
@@ -1196,8 +1196,8 @@ Defaults to: %V = %A
   <context>
     <name>Py</name>
     <message>
-      <location filename="../../AppSpreadsheetGui.cpp" line="94"/>
-      <location filename="../../AppSpreadsheetGui.cpp" line="113"/>
+      <location filename="../../AppSpreadsheetGui.cpp" line="94" />
+      <location filename="../../AppSpreadsheetGui.cpp" line="113" />
       <source>Unnamed</source>
       <translation>未命名</translation>
     </message>
@@ -1205,27 +1205,27 @@ Defaults to: %V = %A
   <context>
     <name>ZoomableView</name>
     <message>
-      <location filename="../../ZoomableView.cpp" line="116"/>
+      <location filename="../../ZoomableView.cpp" line="116" />
       <source>New zoom level:</source>
-      <translation type="unfinished">New zoom level:</translation>
+      <translation>新縮放級別：</translation>
     </message>
     <message>
-      <location filename="../../ZoomableView.cpp" line="116"/>
+      <location filename="../../ZoomableView.cpp" line="116" />
       <source>Zoom Level</source>
-      <translation type="unfinished">Zoom Level</translation>
+      <translation>縮放級別</translation>
     </message>
   </context>
   <context>
     <name>SpreadsheetGui::DlgSheetConf</name>
     <message>
-      <location filename="../../DlgSheetConf.cpp" line="291"/>
+      <location filename="../../DlgSheetConf.cpp" line="291" />
       <source>Setup Configuration Table</source>
       <translation>設定配置表</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.cpp" line="348"/>
+      <location filename="../../DlgSheetConf.cpp" line="348" />
       <source>Unsetup Configuration Table</source>
-      <translation type="unfinished">Unsetup Configuration Table</translation>
+      <translation>取消設定配置表</translation>
     </message>
   </context>
 </TS>
