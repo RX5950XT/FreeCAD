@@ -205,12 +205,11 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qtooltip
 
 --------------------------------------------------------------------------- */
 QToolTip {
-  background-color: @PrimaryColor;
-  /* If you remove the border property, background stops working on Windows */
-  border: 1.5px solid @GeneralBorderColor;
+  background-color: @TooltipBackgroundColor;
+  border: 1px solid @TooltipBorderColor;
   font-weight:bolder;
-  padding: 0 2px 0 2px;
-  border-radius: 5px;
+  padding: 4px 6px 4px 6px;
+  border-radius: @TooltipBorderRadius;
 }
 
 /* QStatusBar -------------------------------------------------------------
@@ -228,12 +227,9 @@ QStatusBar::item {
 }
 
 QStatusBar QToolTip {
-  background-color: @PrimaryColor;
-  border: 1px solid @GeneralBorderColor;
-  /* Remove padding, for fix combo box tooltip */
-
-  /* Reducing transparency to read better */
-  opacity: 230;
+  background-color: @TooltipBackgroundColor;
+  border: 1px solid @TooltipBorderColor;
+  border-radius: @TooltipBorderRadius;
 }
 
 QStatusBar QLabel {
@@ -506,6 +502,8 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qmenu
 QMenu {
   border: 1px solid @GeneralBorderColor;
   background-color: @MenuBackgroundColor;
+  border-radius: @MenuBorderRadius;
+  padding: @MenuPadding;
 }
 
 QMenu::item:disabled {
@@ -514,7 +512,9 @@ QMenu::item:disabled {
 
 QMenu::separator {
   height: 1px;
-  background-color: @GroupboxBorderColor;
+  background-color: @MenuSeparatorColor;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 QMenu::item {
@@ -527,6 +527,7 @@ QMenu::item {
 
 QMenu::item:selected {
   background-color: @AccentBackgroundColor;
+  border-radius: @MenuItemBorderRadius;
 }
 
 QMenu::item:pressed {
@@ -674,8 +675,8 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qscrollbar
 --------------------------------------------------------------------------- */
 
 QScrollBar:horizontal {
-  border-right: 14px solid @GeneralBorderColor;
-  border-left: 14px solid @GeneralBorderColor;
+  border-right: @ScrollbarWidth solid @GeneralBorderColor;
+  border-left: @ScrollbarWidth solid @GeneralBorderColor;
   border-top: 1px solid @GeneralBorderColor;
   border-bottom: 1px solid @GeneralBorderColor;
   background-color: @ScrollbarBackgroundColor;
@@ -684,8 +685,8 @@ QScrollBar:horizontal {
 }
 
 QScrollBar:vertical {
-  border-top: 14px solid @GeneralBorderColor;
-  border-bottom: 14px solid @GeneralBorderColor;
+  border-top: @ScrollbarWidth solid @GeneralBorderColor;
+  border-bottom: @ScrollbarWidth solid @GeneralBorderColor;
   border-left: 1px solid @GeneralBorderColor;
   border-right: 1px solid @GeneralBorderColor;
   background-color: @ScrollbarBackgroundColor;
@@ -697,32 +698,38 @@ QScrollBar::handle:horizontal {
   border-left: 1px solid @GeneralBorderColor;
   border-right: 1px solid @GeneralBorderColor;
   min-width: 20px;
+  border-radius: @ScrollbarBorderRadius;
   background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 @ButtonTopBackgroundColor, stop:1 @ButtonBottomBackgroundColor);
 }
 
 QScrollBar::handle:horizontal:hover {
   background-color: @GeneralBackgroundHoverColor;
+  border-radius: @ScrollbarBorderRadius;
   border: 1px @ButtonTopBackgroundColor;
 }
 
 QScrollBar::handle:horizontal:focus {
   border: 1px solid @AccentColor;
+  border-radius: @ScrollbarBorderRadius;
 }
 
 QScrollBar::handle:vertical {
   border-top: 1px solid @GeneralBorderColor;
   border-bottom: 1px solid @GeneralBorderColor;
-  min-height: 20px;
+  min-height: @ScrollbarHandleMinHeight;
+  border-radius: @ScrollbarBorderRadius;
   background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 @ButtonTopBackgroundColor, stop:1 @ButtonBottomBackgroundColor);
 }
 
 QScrollBar::handle:vertical:focus {
   border: 1px solid @AccentColor;
+  border-radius: @ScrollbarBorderRadius;
 }
 
 QScrollBar::handle:vertical:hover {
   background-color: @GeneralBackgroundHoverColor;
   border: 1px @ButtonTopBackgroundColor;
+  border-radius: @ScrollbarBorderRadius;
 }
 
 QScrollBar::add-line, QScrollBar::sub-line {
