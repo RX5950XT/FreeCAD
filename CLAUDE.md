@@ -49,6 +49,13 @@ pixi run freecad-release
 pixi run build-release && pixi run install-release
 ```
 
+### Windows 安裝檔
+
+- 正式交付格式使用 NSIS installer，不使用壓縮檔
+- 打包腳本：`tools/build_windows_bundle.ps1`
+- 產物：`FreeCAD_<version>-Windows-x86_64-installer.exe`
+- `FreeCAD_Windows/` 與 installer checksum 檔皆不提交版控
+
 ## 專案結構
 
 ```

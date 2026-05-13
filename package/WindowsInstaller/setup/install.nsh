@@ -22,10 +22,10 @@ Section -ProgramFiles SecProgramFiles
    StrCpy $INSTDIR "$INSTDIR\${APP_DIR}"
   ${endif}
   
-  # turn on logging
+  # turn on logging (disabled for non-log builds)
   # Note that this can first be done here since the log file is written to $INSTDIR
   # to $INSTDIR must have a valid path before logging can be turned on
-  LogSet on
+  # LogSet on
 
   # Install and register the core FreeCAD files
   

@@ -177,6 +177,8 @@ Types: feat, fix, refactor, docs, test, chore, perf, ci
 - 編譯 preset：`conda-windows-release`
 - 啟動指令：`pixi run freecad-release`
 - 重新編譯：`pixi run build-release && pixi run install-release`
+- Windows 封裝以 NSIS installer 為主，不使用壓縮檔作為正式交付格式
+- installer 產物與 `FreeCAD_Windows/` bundle 目錄一律排除提交
 - 直接雙擊 `FreeCAD.exe` 前需確保 `python311.dll` 等已複製到 `Library/bin/`
 
 ### 翻譯規範

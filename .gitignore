@@ -71,3 +71,6 @@ tsupdate_stdout.log
 # pixi environments
 *.egg-info
 .pixi
+/FreeCAD_Windows/
+/FreeCAD_*-Windows-x86_64-installer*.exe
+/FreeCAD_*-Windows-x86_64-installer*.exe-SHA256.txt

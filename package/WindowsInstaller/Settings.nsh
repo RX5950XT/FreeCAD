@@ -13,7 +13,8 @@ These typically need to be modified for each FreeCAD release
 # the time to create an installer a lot at the cost of a much greater file size.
 # So assure it is active for release builds!
 !ifndef FC_TEST_BUILD
-    SetCompressor /SOLID lzma
+    # SetCompressor /SOLID lzma
+    SetCompressor lzma
 !endif
 
 #--------------------------------
