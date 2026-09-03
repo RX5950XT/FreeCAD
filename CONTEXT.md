@@ -67,6 +67,28 @@ cmd /c "call \"...\vcvars64.bat\" && pixi run build-release && pixi run install-
 模組翻譯（`src/Mod/*/Gui/Resources/translations/`）才是外部 `.qm`。
 要驗證只能實際啟動 GUI 看介面語言。
 
+### 出廠預設值（2026-09-04 修正）
+
+在**沒有舊 `user.cfg` 的乾淨機器**上安裝，介面會跟原版一模一樣 —— 翻譯與 QSS
+都有正確打包，只是沒被啟用：
+
+- 語言：`QLocale::languageToString()` 給的是 `"Chinese"`，翻譯表的鍵是
+  `"Chinese (Traditional)"`，對不上就退回英文。
+- 樣式：`StyleSheet` 參數預設空字串，`FreeCAD.qss` 根本不載入。
+
+已在 `src/Gui/Application.cpp`（語言預設繁中）與 `src/Gui/StartupProcess.cpp`
+（`StyleSheet` 為空時 `prefPackManager->apply("FreeCAD Dark")`）修好。
+
+驗證方式（不動到自己的設定）：
+
+```powershell
+FreeCAD.exe --user-cfg <空目錄>\user.cfg --system-cfg <空目錄>\system.cfg
+# 產生的 user.cfg 應含 StyleSheet=FreeCAD.qss 與 Theme=FreeCAD Dark
+```
+
+注意語言不會寫進 `user.cfg`（`GetASCII` 帶預設值不落地），只能看介面。
+`branding.xml` 幫不上忙 —— 白名單只有 `StyleSheet`，管不到語言與 Theme pack。
+
 ## 上游同步工作流程（已驗證可用）
 
 ```bash
