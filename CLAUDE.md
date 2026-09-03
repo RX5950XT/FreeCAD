@@ -170,11 +170,29 @@ Copy-Item src/Gui/Stylesheets/parameters/FreeCAD Light.yaml "$env:APPDATA\FreeCA
 | `pixi run freecad-release` | 啟動 FreeCAD（推薦）|
 | `pixi run build-release && pixi run install-release` | 完整重新編譯並安裝 |
 
+## AgentCAD 已獨立成 addon
+
+把 FreeCAD 變成 AI agent 建模引擎的那部分（原 `src/Mod/Agent/` 與
+`tools/agentcad-mcp/`）已在 2026-09-03 拆成獨立 repo：`../AgentCAD`。
+
+它對這個分支沒有任何依賴 —— import 全部是標準 API（`FreeCAD`、`FreeCADGui`、
+`PySide`、`Part`、`Mesh`），原版 FreeCAD 1.2 就能跑。原本掛進編譯的 6 行 CMake
+（`BUILD_AGENT` 及 `src/Mod/CMakeLists.txt` 的 `add_subdirectory`）也已撤除。
+
+開發規範、慣例與踩過的坑都跟著搬到那個 repo 的 `CLAUDE.md` / `tasks/lessons.md`，
+這裡不再維護。本分支只負責繁體中文化與 QSS 樣式改造。
+
+**舊的 `FreeCADMCP` addon 已全部刪除**（`%APPDATA%/FreeCAD/v1-2/Mod_disabled/` 與
+`%APPDATA%/FreeCAD/Mod/`，兩份都刪了）—— 它和 AgentCAD 搶同一個 port 9875。
+要裝回去請重抓上游版本。
+（順帶一提：停用 addon 只改資料夾名字沒有用，FreeCAD 照載，必須整個移出 `Mod/`。）
+
 ## 注意事項
 
 1. **不要直接修改 `build/` 或 `.pixi/` 內的檔案** — 這些目錄被 `.gitignore` 排除，且會在重新編譯時被覆蓋。
 2. **翻譯修改後必須重新建置** — `.ts` 檔案需要編譯為 `.qm` 才能嵌入執行檔。
 3. **樣式測試有兩種方式** — 快速測試可複製到 `%APPDATA%\FreeCAD\`，正式變更需修改 `src/Gui/Stylesheets/` 並重新編譯。
+   **測完務必刪掉使用者目錄的複本**，同名檔案會蓋過原始碼版本。
 4. **直接雙擊 `FreeCAD.exe` 可能缺 DLL** — 必須先將 `python311.dll` 等從 `.pixi/envs/default/` 複製到 `Library/bin/`，或始終使用 `pixi run freecad-release` 啟動。
 5. **使用 OpenCC `s2twp` 而非 `s2tw`** — 以正確處理臺灣用語（如「文件→檔案」、「屏幕→螢幕」、「窗口→視窗」、「鼠標→滑鼠」、「文件夾→資料夾」）。
 

@@ -1,3 +1,28 @@
+# FreeCAD 繁體中文現代化分支
+
+> 本專案是 [FreeCAD](https://github.com/FreeCAD/FreeCAD) 的分支：介面全面翻譯為繁體中文
+> （臺灣用語，OpenCC `s2twp`），並進行現代化 QSS 樣式改造。
+
+## 建置
+
+見 [`CLAUDE.md`](CLAUDE.md)。簡短版：
+
+```powershell
+pixi install
+pixi run configure-release
+pixi run build-release && pixi run install-release
+```
+
+## AgentCAD 已獨立
+
+把 FreeCAD 變成 AI agent 建模引擎的那部分（原 `src/Mod/Agent/`）已經拆成獨立的
+FreeCAD addon，不再需要這個分支：**[AgentCAD](../AgentCAD)**。
+
+它是純 Python，原版 FreeCAD 1.2 就能跑，clone 到 `Mod/Agent/` 即可。
+本分支只負責繁體中文化與樣式改造。
+
+---
+
 <a href="https://freecad.org"><img src="/src/Gui/Icons/freecad.svg" height="100px" width="100px"></a>
 
 ### Your own 3D Parametric Modeler
