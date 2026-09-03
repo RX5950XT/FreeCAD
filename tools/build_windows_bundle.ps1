@@ -74,30 +74,11 @@ function Get-InstallerFileName {
     }
 
     if ($env:BUILD_TAG) {
-        return "FreeCAD_$($env:BUILD_TAG)-Windows-x86_64-installer.exe"
+        return "FreeCAD-TW_$($env:BUILD_TAG)-Windows-x86_64-installer.exe"
     }
 
-    $versionOutput = & $freecadCmd -c "import FreeCAD; v=FreeCAD.Version(); print(f'{v[0]}.{v[1]}.{v[2]}')" 2>&1
-    if ($LASTEXITCODE -ne 0) {
-        throw "freecadcmd.exe 版本查詢失敗。"
-    }
-
-    $baseVersion = ($versionOutput | Out-String).Trim()
-    if ($baseVersion -notmatch '^\d+\.\d+\.\d+$') {
-        throw "無法從 freecadcmd 版本資訊解析 installer 檔名。"
-    }
-
-    # 沒指定 BUILD_TAG 就自動遞增 tw.N，避免覆蓋掉先前發出去的安裝檔
-    $next = 1
-    Get-ChildItem -Path $repoRoot -Filter "FreeCAD_${baseVersion}dev-tw.*-Windows-x86_64-installer.exe" -ErrorAction SilentlyContinue |
-        ForEach-Object {
-            if ($_.Name -match 'dev-tw\.(\d+)-') {
-                $candidate = [int]$Matches[1] + 1
-                if ($candidate -gt $next) { $next = $candidate }
-            }
-        }
-
-    return "FreeCAD_${baseVersion}dev-tw.$next-Windows-x86_64-installer.exe"
+    # 以建置時間當版本：每次產出的檔名都不同，也不會跟原版 FreeCAD 的安裝檔混淆
+    return "FreeCAD-TW_$(Get-Date -Format 'yyyyMMdd-HHmm')-Windows-x86_64-installer.exe"
 }
 
 if (Test-Path $bundleDir) {

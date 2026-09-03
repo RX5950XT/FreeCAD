@@ -12,7 +12,8 @@ Configuration and variables of FreeCAD installer
 #--------------------------------
 # Names and version
 
-!define APP_NAME "FreeCAD"
+# 繁體中文分支：與原版分開安裝，避免共用安裝目錄與登錄機碼
+!define APP_NAME "FreeCAD-TW"
 !define APP_VERSION_NUMBER "${APP_VERSION_MAJOR}.${APP_VERSION_MINOR}.${APP_VERSION_PATCH}.${APP_VERSION_BUILD}"
 # For the proposed install folder we use the scheme "FreeCAD 0.18" 
 # however for the Registry, we need the scheme "FreeCAD 0.18.x" in order
@@ -23,7 +24,8 @@ Configuration and variables of FreeCAD installer
 !define APP_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\${APP_NAME}.exe"
 !define APP_DIR "${APP_NAME} ${APP_SERIES_NAME}"
 # Fixme: FC should use different preferences folder for every release
-!define APP_DIR_USERDATA ${APP_NAME}
+# 程式本身仍使用 %APPDATA%\FreeCAD
+!define APP_DIR_USERDATA FreeCAD
 #!define APP_DIR_USERDATA "${APP_NAME}${APP_VERSION_MAJOR}.${APP_VERSION_MINOR}"
 !define APP_SHORTCUT_INFO "${APP_NAME} - Your Own 3D Parametric Modeler"
 !define APP_INFO "Install/Uninstall ${APP_NAME}"
@@ -33,8 +35,9 @@ Configuration and variables of FreeCAD installer
 !define APP_WIKI_INFO "${APP_NAME} Wiki"
 !define APP_COPYRIGHT "${APP_NAME} is Copyright © 2001-${COPYRIGHT_YEAR} by the ${APP_NAME} Team"
 
-!define APP_RUN "bin\${APP_NAME}.exe"
-!define BIN_FREECAD "${APP_NAME}.exe"
+# 實際執行檔與程序名不隨品牌名改變
+!define APP_RUN "bin\FreeCAD.exe"
+!define BIN_FREECAD "FreeCAD.exe"
 
 !define APP_REGKEY "SOFTWARE\${APP_NAME}${APP_SERIES_KEY}" # like "FreeCAD0180"
 !define APP_REGKEY_SETUP "${APP_REGKEY}\Setup"
