@@ -3,8 +3,6 @@
 Batch translate FreeCAD zh-TW .ts files using zh-CN translations as a base,
 converting Simplified Chinese to Traditional Chinese via OpenCC.
 """
-import os
-import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -107,7 +105,7 @@ def process_tw_file(tw_path: Path, cn_path: Path) -> int:
 
 
 def main():
-    base_dir = Path('D:/Workspace_cloud/Personal_Project/FreeCAD')
+    base_dir = Path(__file__).resolve().parent.parent  # 專案根目錄
     tw_files = list(base_dir.rglob('*_zh-TW.ts'))
 
     total_updated = 0
