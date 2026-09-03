@@ -206,11 +206,51 @@ Copy-Item src/Gui/Stylesheets/parameters/FreeCAD Light.yaml "$env:APPDATA\FreeCA
 - 使用 `pixi run freecad-release` 啟動
 - 或將 `.pixi/envs/default/python311.dll` 複製到 `.pixi/envs/default/Library/bin/`
 
-### 編譯失敗
+### configure 失敗：Could not find compiler set in environment variable CC: cl.exe
+
+pixi 環境把 `CC` 設成 `cl.exe`，但 `cl.exe` 只有跑過 `vcvars64.bat` 才會進 PATH。
+`pixi run configure-release` 直接跑一定失敗，必須先進 MSVC 環境：
 
 ```powershell
-pixi run configure-release  # 重新 configure
-pixi run build-release      # 再試一次
+cmd /c "call \"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat\" && pixi run configure-release"
+```
+
+寫成 `.bat` 執行更方便，但**批次檔內不要出現中文** —— cmd 用 cp950 讀檔，
+UTF-8 的中文註解會變成亂碼並被當成指令執行（症狀是一堆
+「不是內部或外部命令」加上 `pixi: unrecognized subcommand`）。
+
+### configure / build 失敗：路徑指向 D:/Workspace_cloud/...
+
+本專案曾從 `D:\Workspace_cloud\` 搬到 `D:\Workspace\`，而 `.pixi` 環境是搬家前建的 ——
+conda 套件把**絕對路徑寫死**在設定檔裡，搬家後全部指向不存在的位置。
+這是這個分支長期無法完整編譯的真正原因。
+
+2026-09-03 已修復 396 個文字設定檔（`.pc` 375、`.cmake` 5+17、`.py`、`.sh`、`.pri` 等）：
+
+```bash
+find .pixi/envs/default -type f \( -name '*.cmake' -o -name '*.pc' -o -name '*.py' \
+  -o -name '*.sh' -o -name '*.csh' -o -name '*.fish' -o -name '*.settings' \
+  -o -name '*.pri' -o -name '*.prl' -o -name '*.cfg' -o -name '*.json' \) \
+  -exec grep -l "Workspace_cloud" {} + \
+  | xargs sed -i 's|D:/Workspace_cloud/Personal_Project/FreeCAD|D:/Workspace/Personal_Project/FreeCAD|g'
+```
+
+**cmake config 散在三個地方**，只修一處會在 build 階段才爆（`ninja: error: 'z.lib' missing`）：
+`Library/lib/cmake/`、`Library/cmake/`、`Library/WebP/cmake/`。
+
+還剩 35 個 `.pyd` 與 6 個 `.lib` 二進位內含舊路徑，那些是編譯期記錄的 debug 資訊，
+連結時走的是 cmake config 給的路徑，不影響建置。真要徹底乾淨就重建環境
+（`.pixi` 有 9.9 GB，且本機 rattler 快取只剩 137 MB，等於整包重新下載）。
+
+**教訓**：搬動這個專案的資料夾之後，`.pixi` 必須重建，不能直接搬。
+
+### 編譯太慢或把機器卡死
+
+`cmake --build` 預設用光所有核心。限制並行數：
+
+```powershell
+$env:CMAKE_BUILD_PARALLEL_LEVEL = 10   # 16 核的機器留 6 核給自己用
+pixi run build-release
 ```
 
 ### 翻譯未生效

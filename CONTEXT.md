@@ -35,16 +35,37 @@
 
 本分支從此只負責繁體中文化與 QSS 樣式改造。
 
-### 尚未完整編譯
+### 完整編譯（2026-09-03 首次成功）
 
-本機**從未成功完整編譯過**這個分支。`.pixi/envs/default/Library/` 裡的 FreeCAD
-是 conda 裝的上游版本，不是自編的 —— 也就是說繁體中文翻譯與 QSS 改造目前都還沒實際生效過。
+在這之前這個分支**從未編譯成功過**，卡在兩個互相獨立的問題，兩個都已修好並寫進
+`CLAUDE.md` 的疑難排解：
 
-`build/release/` 已在 2026-09-03 清空（原本只是一個 configure 失敗的空殼）。
-要出安裝檔（或讓翻譯／樣式生效）前，必須在 MSVC 環境下完整跑一次
-`configure → build → install`。在那之前 `pixi run freecad-release` 會失敗
-（它 depends-on `install-release`），要啟動請直接跑
-`.pixi/envs/default/Library/bin/FreeCAD.exe` 並補 `QT_QPA_PLATFORM_PLUGIN_PATH`。
+1. `cl.exe` 不在 PATH —— pixi 把 `CC` 設成 `cl.exe`，但要先跑 `vcvars64.bat`。
+2. `.pixi` 環境是專案還在 `D:\Workspace_cloud\` 時建的，conda 套件把絕對路徑寫死在
+   設定檔裡，搬家後全指向不存在的位置。已修復 396 個文字設定檔。
+
+**編譯方式**（`pixi run configure-release` 直接跑會失敗）：
+
+```powershell
+# 兩步都要在 MSVC 環境下，並限制並行數避免機器卡死
+cmd /c "call \"...\vcvars64.bat\" && pixi run configure-release"
+$env:CMAKE_BUILD_PARALLEL_LEVEL = 10
+cmd /c "call \"...\vcvars64.bat\" && pixi run build-release && pixi run install-release"
+```
+
+首次成功的結果：7047 個目標、0 錯誤，約 60 分鐘（10 核）。
+產物版本 `1.2.0 build 47080 (Git)`，來源標記為 `RX5950XT/FreeCAD main`。
+
+注意 `pixi run freecad-release` 仍會失敗（depends-on `install-release` 會重跑安裝），
+要啟動直接跑 `.pixi/envs/default/Library/bin/FreeCAD.exe` 並補
+`QT_QPA_PLATFORM_PLUGIN_PATH`。
+
+### 翻譯與樣式怎麼驗證有生效
+
+核心 GUI 翻譯（`src/Gui/Language/FreeCAD_zh-TW.ts`）是透過 Qt resource（`.qrc`）
+**嵌入二進位**的，安裝目錄裡看不到 `FreeCAD_zh-TW.qm` —— 那是正常的，不是漏裝。
+模組翻譯（`src/Mod/*/Gui/Resources/translations/`）才是外部 `.qm`。
+要驗證只能實際啟動 GUI 看介面語言。
 
 ## 上游同步工作流程（已驗證可用）
 

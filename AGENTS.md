@@ -177,6 +177,13 @@ Types: feat, fix, refactor, docs, test, chore, perf, ci
 - 編譯 preset：`conda-windows-release`
 - 啟動指令：`pixi run freecad-release`
 - 重新編譯：`pixi run build-release && pixi run install-release`
+- **configure 必須在 MSVC 環境下跑**：pixi 把 `CC` 設成 `cl.exe`，但它只有跑過
+  `vcvars64.bat` 才進 PATH。直接 `pixi run configure-release` 一定失敗。
+- **限制並行數**：`$env:CMAKE_BUILD_PARALLEL_LEVEL = 10`（16 核留 6 核），否則機器會卡死。
+- **搬過資料夾就要重建 `.pixi`**：conda 套件把絕對路徑寫死在 `.pc` / `.cmake` 裡。
+  本專案曾從 `D:\Workspace_cloud\` 搬來，2026-09-03 已修復 396 個設定檔；
+  細節與修復指令見 `CLAUDE.md` 的疑難排解。
+- **批次檔內不要寫中文**：cmd 用 cp950 讀檔，UTF-8 中文註解會被當成指令執行。
 - Windows 封裝以 NSIS installer 為主，不使用壓縮檔作為正式交付格式
 - installer 產物與 `FreeCAD_Windows/` bundle 目錄一律排除提交
 - 直接雙擊 `FreeCAD.exe` 前需確保 `python311.dll` 等已複製到 `Library/bin/`
