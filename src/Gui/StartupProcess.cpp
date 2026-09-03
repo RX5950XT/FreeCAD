@@ -542,6 +542,12 @@ void StartupPostProcess::setStyleSheet()
         }
     }
 
+    if (style.empty()) {
+        // Fresh profile: this fork ships the modernized dark theme as the default.
+        Application::Instance->prefPackManager()->apply("FreeCAD Dark");
+        style = hGrp->GetASCII("StyleSheet");
+    }
+
     // In 1.1 we migrated to a common parametrized stylesheet.
     // if we detect an old style, we need to reapply the theme pack.
     migrateOldTheme(style);

@@ -548,7 +548,9 @@ Application::Application(bool GUIenabled)
         // install the last active language
         ParameterGrp::handle hPGrp = App::GetApplication().GetUserParameter().GetGroup("BaseApp");
         hPGrp = hPGrp->GetGroup("Preferences")->GetGroup("General");
-        QString lang = QLocale::languageToString(QLocale().language());
+        // QLocale gives "Chinese", which matches no entry in the translator's table, so a
+        // fresh profile would fall back to English. This fork defaults to Traditional Chinese.
+        QString lang = QStringLiteral("Chinese (Traditional)");
         Translator::instance()->activateLanguage(
             hPGrp->GetASCII("Language", (const char*)lang.toLatin1()).c_str());
         GetWidgetFactorySupplier();
