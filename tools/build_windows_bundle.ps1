@@ -87,7 +87,17 @@ function Get-InstallerFileName {
         throw "無法從 freecadcmd 版本資訊解析 installer 檔名。"
     }
 
-    return "FreeCAD_${baseVersion}dev-Windows-x86_64-installer.exe"
+    # 沒指定 BUILD_TAG 就自動遞增 tw.N，避免覆蓋掉先前發出去的安裝檔
+    $next = 1
+    Get-ChildItem -Path $repoRoot -Filter "FreeCAD_${baseVersion}dev-tw.*-Windows-x86_64-installer.exe" -ErrorAction SilentlyContinue |
+        ForEach-Object {
+            if ($_.Name -match 'dev-tw\.(\d+)-') {
+                $candidate = [int]$Matches[1] + 1
+                if ($candidate -gt $next) { $next = $candidate }
+            }
+        }
+
+    return "FreeCAD_${baseVersion}dev-tw.$next-Windows-x86_64-installer.exe"
 }
 
 if (Test-Path $bundleDir) {
