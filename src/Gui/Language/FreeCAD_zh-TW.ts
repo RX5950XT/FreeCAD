@@ -202,7 +202,7 @@
     <message>
       <location filename="../Workbench.cpp" line="572" />
       <source>Help</source>
-      <translation>説明</translation>
+      <translation>說明</translation>
     </message>
     <message>
       <location filename="../Workbench.cpp" line="573" />
@@ -497,7 +497,7 @@ The property of this object will refer to the property of the Variable Set.</sou
       <location filename="../Assistant.cpp" line="152" />
       <location filename="../Assistant.cpp" line="172" />
       <source>%1 Help</source>
-      <translation>%1 的説明</translation>
+      <translation>%1 的說明</translation>
     </message>
     <message>
       <location filename="../Assistant.cpp" line="99" />
@@ -1524,7 +1524,7 @@ same time. The one with the highest priority will be triggered.</source>
       <location filename="../Dialogs/DlgCustomizeImp.cpp" line="67" />
       <location filename="../Dialogs/DlgCustomizeImp.cpp" line="128" />
       <source>&amp;Help</source>
-      <translation>説明(&amp;H)</translation>
+      <translation>說明(&amp;H)</translation>
     </message>
     <message>
       <location filename="../Dialogs/DlgCustomizeImp.cpp" line="74" />
@@ -2686,7 +2686,7 @@ Specify another directory.</source>
     <message>
       <location filename="../Dialogs/DlgRunExternal.ui" line="138" />
       <source>Help</source>
-      <translation>説明</translation>
+      <translation>說明</translation>
     </message>
     <message>
       <location filename="../Dialogs/DlgRunExternal.cpp" line="127" />
@@ -9516,7 +9516,7 @@ the current copy will be lost.
     <message>
       <location filename="../CommandStd.cpp" line="568" />
       <source>Help Website</source>
-      <translation>説明網站</translation>
+      <translation>說明網站</translation>
     </message>
     <message>
       <location filename="../CommandStd.cpp" line="569" />
@@ -10359,12 +10359,12 @@ Save the document now?</source>
     <message>
       <location filename="../Workbench.cpp" line="603" />
       <source>&amp;Help</source>
-      <translation>説明(&amp;H)</translation>
+      <translation>說明(&amp;H)</translation>
     </message>
     <message>
       <location filename="../Workbench.cpp" line="604" />
       <source>Help</source>
-      <translation>説明</translation>
+      <translation>說明</translation>
     </message>
     <message>
       <location filename="../Workbench.cpp" line="605" />
@@ -12281,7 +12281,7 @@ the region are non-opaque.</source>
     <message>
       <location filename="../CommandStd.cpp" line="543" />
       <source>&amp;Help</source>
-      <translation>説明(&amp;H)</translation>
+      <translation>說明(&amp;H)</translation>
     </message>
     <message>
       <location filename="../CommandStd.cpp" line="544" />
@@ -14708,7 +14708,7 @@ This makes the docked panel stay transparent at all times.</source>
     <message>
       <location filename="../Dialogs/DlgVersionMigrator.ui" line="87" />
       <source>Help</source>
-      <translation>説明</translation>
+      <translation>說明</translation>
     </message>
     <message>
       <location filename="../Dialogs/DlgVersionMigrator.cpp" line="161" />

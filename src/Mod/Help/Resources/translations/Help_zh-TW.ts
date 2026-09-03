@@ -6,7 +6,7 @@
     <message>
       <location filename="../../dlgPreferencesHelp.ui" line="14" />
       <source>Help</source>
-      <translation>説明</translation>
+      <translation>說明</translation>
     </message>
     <message>
       <location filename="../../dlgPreferencesHelp.ui" line="20" />
@@ -178,7 +178,7 @@ This only applies if Markdown is selected above.</source>
     <message>
       <location filename="../../Help.py" line="118" />
       <source>Help</source>
-      <translation>説明</translation>
+      <translation>說明</translation>
     </message>
   </context>
   <context>

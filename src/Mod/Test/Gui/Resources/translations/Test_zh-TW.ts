@@ -114,7 +114,7 @@
     <message>
       <location filename="../../UnitTestImp.cpp" line="172" />
       <source>Help</source>
-      <translation>説明</translation>
+      <translation>說明</translation>
     </message>
     <message>
       <location filename="../../UnitTestImp.cpp" line="173" />

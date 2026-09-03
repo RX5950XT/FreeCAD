@@ -464,7 +464,7 @@ SLOPE 定義了在 time = T1 和 T2 附近，從 0 到 H1、從 H2 到 0 之間�
       <location filename="../../../CommandCreateSimulation.py" line="679" />
       <location filename="../../../CommandCreateSimulation.py" line="696" />
       <source>Help</source>
-      <translation>説明</translation>
+      <translation>說明</translation>
     </message>
     <message>
       <location filename="../../../CommandCreateSimulation.py" line="694" />
@@ -1111,7 +1111,7 @@ The files are named "runPreDrag.asmt" and "dragging.log" and are located in the 
     <message>
       <location filename="../panels/TaskAssemblyCreateBom.ui" line="109" />
       <source>Help</source>
-      <translation>説明</translation>
+      <translation>說明</translation>
     </message>
   </context>
   <context>
