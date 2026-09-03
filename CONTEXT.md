@@ -89,6 +89,17 @@ FreeCAD.exe --user-cfg <空目錄>\user.cfg --system-cfg <空目錄>\system.cfg
 注意語言不會寫進 `user.cfg`（`GetASCII` 帶預設值不落地），只能看介面。
 `branding.xml` 幫不上忙 —— 白名單只有 `StyleSheet`，管不到語言與 Theme pack。
 
+### 發布 release 一定要標 latest
+
+fork 從上游帶來一個 `1.2.0dev` release（2026-05-13），裡面是**原版 FreeCAD 安裝檔**。
+我們的版本若標成 pre-release，GitHub 的 Latest 就會停在那個原版上 ——
+從 repo 首頁或 `/releases/latest` 下載到的會是原版，症狀是「裝了跟沒改一樣」。
+
+```powershell
+gh release edit <tag> -R RX5950XT/FreeCAD --prerelease=false --latest
+gh api repos/RX5950XT/FreeCAD/releases/latest -q '.tag_name'   # 驗證
+```
+
 ## 上游同步工作流程（已驗證可用）
 
 ```bash
