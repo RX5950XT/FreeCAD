@@ -72,5 +72,10 @@ tsupdate_stdout.log
 *.egg-info
 .pixi
 /FreeCAD_Windows/
-/FreeCAD_*-Windows-x86_64-installer*.exe
-/FreeCAD_*-Windows-x86_64-installer*.exe-SHA256.txt
+/FreeCAD*-Windows-x86_64-installer*.exe
+/FreeCAD*-Windows-x86_64-installer*.exe-SHA256.txt
+# 打包過程的暫存
+/.nsis_tmp/
+/.NsProcess.zip
+/package/WindowsInstaller/__pycache__/
+/package/WindowsInstaller/version.nsh
