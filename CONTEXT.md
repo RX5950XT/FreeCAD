@@ -93,7 +93,7 @@ FreeCAD.exe --user-cfg <空目錄>\user.cfg --system-cfg <空目錄>\system.cfg
 
 極簡 AI 介面（簡化工具列、右側量測面板、狀態列「AI 已就緒 · port 9875」）
 **不在這個 repo 裡** —— 它是 `../AgentCAD_MCP` 這個獨立 repo 的 addon，
-開發機用 junction 掛在 `%APPDATA%\FreeCAD1-2\Mod\Agent`。
+開發機用 junction 掛在 `%APPDATA%/FreeCAD/v1-2/Mod/Agent`。
 所以本機怎麼跑都正常，安裝到別台電腦卻只剩原版 FreeCAD 介面。
 
 `tools/build_windows_bundle.ps1` 現在會把它複製進 `Mod/Agent`，
@@ -110,7 +110,7 @@ claude mcp add agentcad -s user -- uv run --script "<安裝目錄>\Mod\Agent\mcp
 ```powershell
 installer.exe /S /CurrentUser              # 裝到 %LOCALAPPDATA%\Programs\FreeCAD-TW 1.2
 $env:FREECAD_USER_HOME = "<空目錄>"        # 隔離掉本機的 addon 與設定
-& "<安裝目錄>in\FreeCAD.exe"
+& "<安裝目錄>/bin/FreeCAD.exe"
 ```
 
 `FREECAD_USER_HOME` 是關鍵：只用 `--user-cfg` 仍會載入 `%APPDATA%` 底下的 addon，
