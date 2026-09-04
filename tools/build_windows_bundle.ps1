@@ -130,6 +130,23 @@ Copy-Item -Recurse -Force "$condaEnv/Library/Ext/*" "$bundleDir/Ext/" -ErrorActi
 Copy-Item -Recurse -Force "$condaEnv/Library/lib/*" "$bundleDir/lib/" -ErrorAction SilentlyContinue
 Copy-Item -Recurse -Force "$condaEnv/Library/Mod/*" "$bundleDir/Mod/" -ErrorAction SilentlyContinue
 
+Write-Host "=== Step 5b: Bundling AgentCAD addon ===" -ForegroundColor Cyan
+# 極簡 AI 介面（工作台、量測面板）來自 AgentCAD addon，不在 FreeCAD 原始碼裡。
+# 開發機是用 junction 掛在 %APPDATA%\FreeCAD1-2\Mod\Agent，安裝檔必須自己帶一份，
+# 否則裝到別台電腦就只剩原版 FreeCAD 介面。
+$agentSrc = Join-Path (Split-Path $repoRoot -Parent) "AgentCAD_MCP"
+if (-not (Test-Path $agentSrc)) {
+    throw "找不到 AgentCAD addon：$agentSrc"
+}
+$agentDst = Join-Path $bundleDir "Mod/Agent"
+New-Item -ItemType Directory -Force -Path $agentDst | Out-Null
+Copy-Item -Recurse -Force "$agentSrc/*" $agentDst -Exclude @(".git", "tasks", "__pycache__")
+Get-ChildItem -Path $agentDst -Recurse -Directory -Filter "__pycache__" | Remove-Item -Recurse -Force
+if (-not (Test-Path "$agentDst/InitGui.py")) {
+    throw "AgentCAD addon 複製失敗：$agentDst 缺少 InitGui.py"
+}
+Write-Host "  AgentCAD bundled from $agentSrc"
+
 Write-Host "=== Step 6: Copying documentation ===" -ForegroundColor Cyan
 $docs = @("ThirdPartyLibraries.html", "LICENSE.html")
 foreach ($doc in $docs) {
