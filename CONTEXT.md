@@ -89,6 +89,33 @@ FreeCAD.exe --user-cfg <空目錄>\user.cfg --system-cfg <空目錄>\system.cfg
 注意語言不會寫進 `user.cfg`（`GetASCII` 帶預設值不落地），只能看介面。
 `branding.xml` 幫不上忙 —— 白名單只有 `StyleSheet`，管不到語言與 Theme pack。
 
+### 安裝檔必須自己帶 AgentCAD addon
+
+極簡 AI 介面（簡化工具列、右側量測面板、狀態列「AI 已就緒 · port 9875」）
+**不在這個 repo 裡** —— 它是 `../AgentCAD_MCP` 這個獨立 repo 的 addon，
+開發機用 junction 掛在 `%APPDATA%\FreeCAD1-2\Mod\Agent`。
+所以本機怎麼跑都正常，安裝到別台電腦卻只剩原版 FreeCAD 介面。
+
+`tools/build_windows_bundle.ps1` 現在會把它複製進 `Mod/Agent`，
+找不到就讓打包失敗。發安裝檔前先確認 AgentCAD_MCP 已 push 且是最新的。
+
+MCP server 仍要在每台電腦各自註冊（介面本身不需要）：
+
+```powershell
+claude mcp add agentcad -s user -- uv run --script "<安裝目錄>\Mod\Agent\mcp\server.py"
+```
+
+### 端到端驗證安裝檔（別再只測 bundle 目錄）
+
+```powershell
+installer.exe /S /CurrentUser              # 裝到 %LOCALAPPDATA%\Programs\FreeCAD-TW 1.2
+$env:FREECAD_USER_HOME = "<空目錄>"        # 隔離掉本機的 addon 與設定
+& "<安裝目錄>in\FreeCAD.exe"
+```
+
+`FREECAD_USER_HOME` 是關鍵：只用 `--user-cfg` 仍會載入 `%APPDATA%` 底下的 addon，
+測不出「乾淨機器」的真實情況。
+
 ### 發布 release 一定要標 latest
 
 fork 從上游帶來一個 `1.2.0dev` release（2026-05-13），裡面是**原版 FreeCAD 安裝檔**。
